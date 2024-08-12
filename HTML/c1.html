@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+        }
+        body{
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        .sumit{
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-template-areas: "nav nav nav nav"
+                                  "aside main main aside"
+                                  "aside main main aside"
+                                  "footer footer footer footer";
+        }
+
+        .box1{
+            grid-area: nav;
+            background-color: white;
+        }
+        .box2{
+            grid-area: aside;
+            background-color: red;
+        }
+        .box3{
+            grid-area: main;
+            background-color: blue;
+        }
+        .box4{
+            grid-area: aside;
+            background-color: red;
+        }
+        .box5{
+            grid-area: footer;
+            background-color: black;
+        }
+
+        #para::selection{
+            background-color: black;
+            color: white;
+        }
+
+        #para::first-letter{
+            background-color: black;
+            color: white;
+        }
+
+        #para:hover::before{
+            content:"Hello techno";
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="box"> 
+        regular box
+
+    </div>
+    <div id="box2">
+        alternate box
+    </div>
+    <div id="p1">
+        <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi commodi voluptate eveniet eos, veritatis vel consequatur magnam exercitationem. Culpa totam qui eos voluptate natus voluptatem odit repellendus amet voluptatibus fugiat!</p>
+        <a href="" target="_blank">google</a>
+        <a href="" target="_self">insta</a>
+
+
+
+
+    </div>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+    <div class="sumit">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+    </div>
+
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam at asperiores vero temporibus voluptas placeat deserunt autem, magni est accusamus cupiditate repellendus sit eligendi, maxime earum quo. Vel sit aut aperiam praesentium totam enim quis!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, odit et natus dignissimos vero, quos a quae alias magni dolor accusamus totam culpa vel quidem aut nemo asperiores atque nam.
+    </p>
+
+</body>
+</html>
